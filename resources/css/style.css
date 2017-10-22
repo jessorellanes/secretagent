@@ -63,10 +63,6 @@ nav {
   text-align: center;
 }
 
-.nav {
-  display: none;
-}
-
 nav ul {
   justify-content: space-around;
 }
@@ -78,6 +74,10 @@ nav li {
 nav li a{
   text-transform: capitalize;
   text-decoration: none;
+}
+
+.nav {
+  display: none;
 }
 
 .title,
