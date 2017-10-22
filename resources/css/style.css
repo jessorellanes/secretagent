@@ -60,6 +60,11 @@ header {
 nav {
   background-color: firebrick;
   padding: 0.75rem 1.25rem;
+  text-align: center;
+}
+
+.nav {
+  display: none;
 }
 
 nav ul {
@@ -76,8 +81,7 @@ nav li a{
 }
 
 .title,
-.title-box,
-.hero {
+.title-box {
   justify-content: center;
 }
 
@@ -89,6 +93,7 @@ nav li a{
 }
 
 .title-box {
+  margin-top: 9rem;
   width: 25rem;
 }
 
@@ -108,6 +113,7 @@ h1 {
 footer {
   margin-top: 3rem;
   justify-content:space-between;
+  flex-wrap: wrap;
 }
 
 .article,
@@ -144,4 +150,60 @@ footer {
   height: 5rem;
   align-items: center;
   justify-content: flex-start;
+}
+
+/**Media Queries**/
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 800px;
+  }
+
+  .article,
+  .info {
+    width: 47%;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .hero {
+    height: 15rem;
+  }
+
+  .text-box{
+    margin-top: 10rem;
+  }
+
+  nav ul li a {
+    display: none;
+    justify-content: center;
+  }
+
+  .nav {
+    display: initial;
+  }
+
+  .container {
+    width: 450px;
+  }
+
+  .title-text {
+    font-size: 1rem;
+    padding: 0.25rem 0 1rem 2rem;
+  }
+
+  .title-box span {
+    font-size: 0.77rem;
+    padding-top: 1rem;
+    padding-left: 2rem;
+  }
+
+  .article,
+  .info {
+    width: 90%;
+  }
+
+  footer {
+    justify-content: center;
+  }
 }
